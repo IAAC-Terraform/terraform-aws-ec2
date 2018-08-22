@@ -15,12 +15,6 @@ resource "aws_instance" "ec2" {
       volume_size = "${var.root_vol_size}"
   }
 
-  ebs_block_device {
-      volume_type = "${var.ebs_vol_type}"
-      device_name = "${var.device_name}"
-      encrypted = "${var.encrypted}"
-  }
-
   tags {
       Name = "${var.name}-0${count.index + 1}"
       env = "${var.env}"

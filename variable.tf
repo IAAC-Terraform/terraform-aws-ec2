@@ -16,8 +16,3 @@ variable "root_vol_type" {}
 
 variable "root_vol_size" {}
 
-variable "ebs_vol_type" {}
-
-variable "device_name" {}
-
-variable "encrypted" {}
