@@ -14,7 +14,7 @@ resource "aws_instance" "ec2" {
   disable_api_termination = "${var.disable_api_termination}"
   
   volume_tags {
-      name = "${var.name}-vol-0${count.index + 1}"
+      Name = "${var.name}-vol-0${count.index + 1}"
       env = "${var.env}"
   }
 
